@@ -1017,6 +1017,7 @@ enum DamageEffectType
     SELF_DAMAGE             = 6
 };
 
+// 定义对象的类型
 enum GameobjectTypes
 {
     GAMEOBJECT_TYPE_DOOR                   = 0,
@@ -1030,7 +1031,7 @@ enum GameobjectTypes
     GAMEOBJECT_TYPE_SPELL_FOCUS            = 8,
     GAMEOBJECT_TYPE_TEXT                   = 9,
     GAMEOBJECT_TYPE_GOOBER                 = 10,
-    GAMEOBJECT_TYPE_TRANSPORT              = 11,
+    GAMEOBJECT_TYPE_TRANSPORT              = 11,		// 传送点,如船或飞艇
     GAMEOBJECT_TYPE_AREADAMAGE             = 12,
     GAMEOBJECT_TYPE_CAMERA                 = 13,
     GAMEOBJECT_TYPE_MAP_OBJECT             = 14,

@@ -28,6 +28,7 @@
 #include "DBCStores.h"
 #include "ProgressBar.h"
 
+// * 加载传递点.船或飞艇,如 幽暗城到奥格瑞玛
 void MapManager::LoadTransports()
 {
     QueryResult* result = WorldDatabase.Query("SELECT entry, name, period FROM transports");
