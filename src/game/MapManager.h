@@ -29,6 +29,7 @@
 class Transport;
 class BattleGround;
 
+// 描述:	把 MapId 与 Instance Id 合在一起,方便查找与管理.
 struct MapID
 {
     explicit MapID(uint32 id) : nMapId(id), nInstanceId(0) {}
@@ -48,6 +49,7 @@ struct MapID
     uint32 nInstanceId;
 };
 
+// 描述:	 Map 管理器,它是一个单实例,且是类级的线程安全,即可以在多线程中访问.
 class MapManager : public MaNGOS::Singleton<MapManager, MaNGOS::ClassLevelLockable<MapManager, std::recursive_mutex> >
 {
         friend class MaNGOS::OperatorNew<MapManager>;
@@ -136,7 +138,7 @@ class MapManager : public MaNGOS::Singleton<MapManager, MaNGOS::ClassLevelLockab
         TransportSet m_Transports;
 
         typedef std::map<uint32, TransportSet> TransportMap;
-        TransportMap m_TransportsByMap;
+        TransportMap m_TransportsByMap;				// 保存 Map 中使用到的 Transport. MapID 到拥有的 Transport 集合的映射
 
         uint32 GenerateInstanceId() { return ++i_MaxInstanceId; }
         void InitMaxInstanceId();
