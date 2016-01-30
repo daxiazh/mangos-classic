@@ -68,10 +68,11 @@ enum FactionMasks
                             // if none flags set then non-aggressive creature
 };
 
+// 定义地图类型
 enum MapTypes
 {
-    MAP_COMMON          = 0,
-    MAP_INSTANCE        = 1,
+    MAP_COMMON          = 0,		// 大陆?只有一份
+    MAP_INSTANCE        = 1,		// 可以存在多份的地图
     MAP_RAID            = 2,
     MAP_BATTLEGROUND    = 3,
 };
