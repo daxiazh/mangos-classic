@@ -34,6 +34,8 @@ INSTANTIATE_SINGLETON_1(GameEventMgr);
 
 bool GameEventMgr::CheckOneGameEvent(uint16 entry, time_t currenttime) const
 {
+	/// 检查指定的 Event 是否正在发生
+
     // Get the event information
     if (mGameEvent[entry].start < currenttime && currenttime < mGameEvent[entry].end &&
             ((currenttime - mGameEvent[entry].start) % (mGameEvent[entry].occurence * MINUTE)) < (mGameEvent[entry].length * MINUTE))
