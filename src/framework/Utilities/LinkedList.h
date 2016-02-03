@@ -24,23 +24,24 @@
 //============================================
 class LinkedListHead;
 
+// #LinkedListElement双向链表的元素
 class LinkedListElement
 {
     private:
 
         friend class LinkedListHead;
 
-        LinkedListElement* iNext;
-        LinkedListElement* iPrev;
+        LinkedListElement* iNext;		// #LinkedListElement后一个元素
+        LinkedListElement* iPrev;		// #LinkedListElement前一个元素
 
     public:
 
         LinkedListElement()  { iNext = nullptr; iPrev = nullptr; }
         ~LinkedListElement() { delink(); }
 
-        bool hasNext() const  { return (iNext->iNext != nullptr); }
-        bool hasPrev() const  { return (iPrev->iPrev != nullptr); }
-        bool isInList() const { return (iNext != nullptr && iPrev != nullptr); }
+        bool hasNext() const  { return (iNext->iNext != nullptr); }					// 后面是否还有元素
+        bool hasPrev() const  { return (iPrev->iPrev != nullptr); }					// 前面是否还有元素
+        bool isInList() const { return (iNext != nullptr && iPrev != nullptr); }	// 是否在链表中
 
         LinkedListElement*       next()       { return hasNext() ? iNext : nullptr; }
         LinkedListElement const* next() const { return hasNext() ? iNext : nullptr; }
@@ -52,6 +53,7 @@ class LinkedListElement
         LinkedListElement*       nocheck_prev()       { return iPrev; }
         LinkedListElement const* nocheck_prev() const { return iPrev; }
 
+		// 从链表中移除自己,并把前后的元素链接起来
         void delink()
         {
             if (isInList())
@@ -63,6 +65,7 @@ class LinkedListElement
             }
         }
 
+		// 在自己前面插入一个元素
         void insertBefore(LinkedListElement* pElem)
         {
             pElem->iNext = this;
@@ -71,6 +74,7 @@ class LinkedListElement
             iPrev = pElem;
         }
 
+		// 在自己后面插入一个元素
         void insertAfter(LinkedListElement* pElem)
         {
             pElem->iPrev = this;
@@ -81,14 +85,14 @@ class LinkedListElement
 };
 
 //============================================
-
+// #LinkedListHead双向链表
 class LinkedListHead
 {
     private:
 
         LinkedListElement iFirst;
         LinkedListElement iLast;
-        uint32 iSize;
+        uint32 iSize;				// 元素个数
 
     public:
 
@@ -109,16 +113,19 @@ class LinkedListHead
         LinkedListElement*       getLast()        { return (isEmpty() ? nullptr : iLast.iPrev); }
         LinkedListElement const* getLast() const  { return (isEmpty() ? nullptr : iLast.iPrev); }
 
+		// 在最前面插入一个元素
         void insertFirst(LinkedListElement* pElem)
         {
             iFirst.insertAfter(pElem);
         }
 
+		// 在最后面插入一个元素
         void insertLast(LinkedListElement* pElem)
         {
             iLast.insertBefore(pElem);
         }
 
+		// 获取元素个数
         uint32 getSize() const
         {
             if (!iSize)

@@ -22,7 +22,7 @@
 #include "Utilities/LinkedList.h"
 
 //=====================================================
-
+// 定义把两个指定类型的对象建立起联系的基类,这样可以在派生类中重载有关建立链接与断开链接时的行为.
 template<class TO, class FROM>
 class Reference : public LinkedListElement
 {

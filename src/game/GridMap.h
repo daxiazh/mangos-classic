@@ -268,7 +268,7 @@ class MANGOS_DLL_SPEC TerrainInfo : public Referencable<std::atomic_long>
         const uint32 m_mapId;
 
         GridMap* m_GridMaps[MAX_NUMBER_OF_GRIDS][MAX_NUMBER_OF_GRIDS];
-        int16 m_GridRef[MAX_NUMBER_OF_GRIDS][MAX_NUMBER_OF_GRIDS];
+         int16 m_GridRef[MAX_NUMBER_OF_GRIDS][MAX_NUMBER_OF_GRIDS];
 
         // global garbage collection timer
         ShortIntervalTimer i_timer;

@@ -24,6 +24,7 @@
 #include "Utilities/LinkedList.h"
 #include "Utilities/LinkedReference/Reference.h"
 
+// 一个链表,可以把两个对象(TO, FROM)链接到一起作为链表的一个元素
 template <class TO, class FROM>
 class RefManager : public LinkedListHead
 {

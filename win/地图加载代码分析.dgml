@@ -1,236 +1,290 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DirectedGraph DataVirtualized="True" Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
   <Nodes>
-    <Node Id="(Name=&quot;MaNGOS::Compute&lt;CoordPair&lt;1024&gt;,512&gt;&quot; @6 Type=CoordPair&lt;1024&gt; OverloadingParameters=[(@36 Name=x),(@36 Name=y),(@36 Name=center_offset),(@36 Name=size)] @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="206.453333333333,1015.28,89.2366666666667,25.24" Label="Compute" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/griddefines.h StartLineNumber=128 StartCharacterOffset=0 EndLineNumber=128 EndCharacterOffset=0)">
+    <Node Id="(Name=&quot;MaNGOS::Compute&lt;CoordPair&lt;1024&gt;,512&gt;&quot; @6 Type=CoordPair&lt;1024&gt; OverloadingParameters=[(@38 Name=x),(@38 Name=y),(@38 Name=center_offset),(@38 Name=size)] @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="327.106666666667,1028.40666666667,89.2366666666667,25.8366666666666" Label="Compute" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/griddefines.h StartLineNumber=128 StartCharacterOffset=0 EndLineNumber=128 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="(Name=&quot;MaNGOS::Singleton&lt;MapManager,MaNGOS::ClassLevelLockable&lt;MapManager,std::recursive_mutex&gt;,MaNGOS::OperatorNew&lt;MapManager&gt;,MaNGOS::ObjectLifeTime&lt;MapManager&gt; &gt;::Instance&quot; @6 Type=&quot;MapManager &amp;&quot; @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="560.728333333333,960.039999999998,90.6866666666667,25.24" Label="Singleton">
+    <Node Id="(Name=&quot;MaNGOS::Singleton&lt;MapManager,MaNGOS::ClassLevelLockable&lt;MapManager,std::recursive_mutex&gt;,MaNGOS::OperatorNew&lt;MapManager&gt;,MaNGOS::ObjectLifeTime&lt;MapManager&gt; &gt;::Instance&quot; @6 Type=&quot;MapManager &amp;&quot; @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="653.381666666667,972.569999999999,90.6866666666667,25.8366666666666" Label="Singleton">
       <Category Ref="CallStackEntry" />
     </Node>
-    <Node Id="(Name=&quot;MaNGOS::Singleton&lt;ObjectMgr,MaNGOS::SingleThreaded&lt;ObjectMgr&gt;,MaNGOS::OperatorNew&lt;ObjectMgr&gt;,MaNGOS::ObjectLifeTime&lt;ObjectMgr&gt; &gt;::Instance&quot; @6 Type=&quot;ObjectMgr &amp;&quot; @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="355.728333333333,904.799999999998,90.6866666666667,25.24" Label="Singleton">
+    <Node Id="(Name=&quot;MaNGOS::Singleton&lt;MapPersistentStateManager,MaNGOS::SingleThreaded&lt;MapPersistentStateManager&gt;,MaNGOS::OperatorNew&lt;MapPersistentStateManager&gt;,MaNGOS::ObjectLifeTime&lt;MapPersistentStateManager&gt; &gt;::Instance&quot; @6 Type=&quot;MapPersistentStateManager &amp;&quot; @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="519.826642252604,546.674374807676,83.7966666666666,25.8366666666667" Label="Instance" SourceLocation="(Assembly=file:///d:/gitsourcecode/mygit/mangos-classic/src/framework/policies/singleton.h StartLineNumber=49 StartCharacterOffset=0 EndLineNumber=49 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+      <Category Ref="CurrentCallStackEntry" />
+    </Node>
+    <Node Id="(Name=&quot;MaNGOS::Singleton&lt;ObjectMgr,MaNGOS::SingleThreaded&lt;ObjectMgr&gt;,MaNGOS::OperatorNew&lt;ObjectMgr&gt;,MaNGOS::ObjectLifeTime&lt;ObjectMgr&gt; &gt;::Instance&quot; @6 Type=&quot;ObjectMgr &amp;&quot; @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="176.381666666667,916.733333333332,90.6866666666667,25.8366666666666" Label="Singleton">
       <Category Ref="CallStackEntry" />
     </Node>
-    <Node Id="(Name=&quot;RtlInitializeExceptionChain() + 54 字节&quot; @4 @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="616.511666666666,0,245.12,25.24" CodeSchemaProperty_IsExternal="True" Label="RtlInitializeExceptionChain + 54 字节">
+    <Node Id="(Name=&quot;RtlInitializeExceptionChain() + 54 字节&quot; @4 @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="231.164975585938,-11.6932918589909,245.12,25.8366666666667" CodeSchemaProperty_IsExternal="True" Label="RtlInitializeExceptionChain + 54 字节">
       <Category Ref="CallStackEntry" />
+      <Category Ref="CurrentCallStackEntry" />
       <Category Ref="ExternalCallStackEntry" />
     </Node>
-    <Node Id="(Name=GameEventMgr::IsActiveEvent @6 @21 OverloadingParameters=[@22] @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="282.13,708.599999999998,111.883333333333,25.24" Label="IsActiveEvent" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/gameeventmgr.h StartLineNumber=83 StartCharacterOffset=0 EndLineNumber=83 EndCharacterOffset=0)">
+    <Node Id="(Name=GameEventMgr::Initialize @6 @15 OverloadingParameters=[(Type=&quot;MapPersistentState * {WorldPersistentState}&quot; Name=state)] @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="18.9716666666668,717.549999999999,83.5066666666667,25.8366666666666" Label="Initialize" SourceLocation="(Assembly=file:///d:/gitsourcecode/mygit/mangos-classic/src/game/gameeventmgr.cpp StartLineNumber=600 StartCharacterOffset=0 EndLineNumber=600 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="(Name=GameEventMgr::NextCheck @6 @13 OverloadingParameters=[(Type=&quot;unsigned short&quot; Name=entry)] @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="424.123333333333,708.599999999998,97.8966666666666,25.24" Label="NextCheck" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/gameeventmgr.cpp StartLineNumber=43 StartCharacterOffset=0 EndLineNumber=43 EndCharacterOffset=0)">
+    <Node Id="(Name=GameEventMgr::IsActiveEvent @6 @23 OverloadingParameters=[@24] @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="530.783333333334,717.549999999999,111.883333333333,25.8366666666666" Label="IsActiveEvent" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/gameeventmgr.h StartLineNumber=83 StartCharacterOffset=0 EndLineNumber=83 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="(Name=GameEventMgr::UpdateCreatureData @6 @15 OverloadingParameters=[(Type=short Name=event_id),(@21 Name=activate)] @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="809.871666666666,834.319999999998,154.4,25.24" Label="UpdateCreatureData" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/gameeventmgr.cpp StartLineNumber=876 StartCharacterOffset=0 EndLineNumber=876 EndCharacterOffset=0)">
+    <Node Id="(Name=GameEventMgr::NextCheck @6 @13 OverloadingParameters=[(Type=&quot;unsigned short&quot; Name=entry)] @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="402.776666666667,717.549999999999,97.8966666666665,25.8366666666666" Label="NextCheck" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/gameeventmgr.cpp StartLineNumber=43 StartCharacterOffset=0 EndLineNumber=43 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="(Name=GameEventMgr::UpdateEventQuests @6 @15 OverloadingParameters=[@22,(@21 Name=Activate)] @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="351.4,834.319999999998,149.343333333333,25.24" Label="UpdateEventQuests" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/gameeventmgr.cpp StartLineNumber=897 StartCharacterOffset=0 EndLineNumber=897 EndCharacterOffset=0)">
+    <Node Id="(Name=GameEventMgr::UpdateCreatureData @6 @15 OverloadingParameters=[(Type=short Name=event_id),(@23 Name=activate)] @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="651.525,845.059999999999,154.4,25.8366666666666" Label="UpdateCreatureData" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/gameeventmgr.cpp StartLineNumber=876 StartCharacterOffset=0 EndLineNumber=876 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="(Name=InstanceData::Load @18 @15 OverloadingParameters=[(Type=&quot;const char *&quot; Name=__formal)] @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="910.023333333333,763.839999999998,64.0966666666666,25.24" Label="Load" SourceLocation="(Assembly=file:///d:/gitsourcecode/mygit/mangos-classic/src/game/instancedata.h StartLineNumber=56 StartCharacterOffset=0 EndLineNumber=56 EndCharacterOffset=0)">
+    <Node Id="(Name=GameEventMgr::UpdateEventQuests @6 @15 OverloadingParameters=[@24,(@23 Name=Activate)] @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="472.053333333334,845.059999999999,149.343333333333,25.8366666666666" Label="UpdateEventQuests" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/gameeventmgr.cpp StartLineNumber=897 StartCharacterOffset=0 EndLineNumber=897 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="(Name=Map::getNGrid @6 Type=&quot;NGrid&lt;16,Player,TypeList&lt;Player,TypeList&lt;Creature,TypeList&lt;Corpse,TypeList&lt;Camera,TypeNull&gt; &gt; &gt; &gt;,TypeList&lt;GameObject,TypeList&lt;Creature,TypeList&lt;DynamicObject,TypeList&lt;Corpse,TypeNull&gt; &gt; &gt; &gt; &gt; *&quot; OverloadingParameters=[(@13 Name=x),(@13 Name=y)] @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="441.526666666666,1181,89.09,25.24" Label="getNGrid" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/map.h StartLineNumber=310 StartCharacterOffset=0 EndLineNumber=310 EndCharacterOffset=0)">
+    <Node Id="(Name=InstanceData::Load @20 @15 OverloadingParameters=[(Type=&quot;const char *&quot; Name=__formal)] @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="840.676666666667,773.386666666666,64.0966666666668,25.8366666666666" Label="Load" SourceLocation="(Assembly=file:///d:/gitsourcecode/mygit/mangos-classic/src/game/instancedata.h StartLineNumber=56 StartCharacterOffset=0 EndLineNumber=56 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="(Name=ObjectMgr::GetCreatureDataPair @6 Type=&quot;const std::pair&lt;unsigned int const ,CreatureData&gt; *&quot; OverloadingParameters=[(@13 Name=guid)] @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="0,960.039999999998,154.143333333333,25.24" Label="GetCreatureDataPair">
-      <Category Ref="CallStackEntry" />
-    </Node>
-    <Node Id="(Name=SpawnCreatureInMapsWorker::SpawnCreatureInMapsWorker @6 @15 OverloadingParameters=[(@13 Name=guid),(Type=&quot;const CreatureData *&quot; Name=data)] @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="681.95,960.039999999998,208.243333333333,25.24" Label="SpawnCreatureInMapsWorker" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/creature.cpp StartLineNumber=2465 StartCharacterOffset=0 EndLineNumber=2465 EndCharacterOffset=0)">
+    <Node Id="(Name=Map::getNGrid @6 Type=&quot;NGrid&lt;16,Player,TypeList&lt;Player,TypeList&lt;Creature,TypeList&lt;Corpse,TypeList&lt;Camera,TypeNull&gt; &gt; &gt; &gt;,TypeList&lt;GameObject,TypeList&lt;Creature,TypeList&lt;DynamicObject,TypeList&lt;Corpse,TypeNull&gt; &gt; &gt; &gt; &gt; *&quot; OverloadingParameters=[(@13 Name=x),(@13 Name=y)] @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="821.18,1195.91666666667,89.0899999999999,25.8366666666666" Label="getNGrid" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/map.h StartLineNumber=310 StartCharacterOffset=0 EndLineNumber=310 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="@10" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="685.22,331.439999999999,107.703333333333,25.24" CodeSchemaProperty_IsExternal="True" Label="invoke_main" SourceLocation="(Assembly=file:///f:/dd/vctools/crt/vcstartup/src/startup/exe_common.inl StartLineNumber=73 StartCharacterOffset=0 EndLineNumber=73 EndCharacterOffset=0)">
+    <Node Id="(Name=ObjectMgr::GetCreatureDataPair @6 Type=&quot;const std::pair&lt;unsigned int const ,CreatureData&gt; *&quot; OverloadingParameters=[(@13 Name=guid)] @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="468.653333333334,972.569999999999,154.143333333333,25.8366666666666" Label="GetCreatureDataPair">
+      <Category Ref="CallStackEntry" />
+    </Node>
+    <Node Id="(Name=SpawnCreatureInMapsWorker::SpawnCreatureInMapsWorker @6 @15 OverloadingParameters=[(@13 Name=guid),(Type=&quot;const CreatureData *&quot; Name=data)] @2)" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="987.603333333334,972.569999999999,208.243333333333,25.8366666666666" Label="SpawnCreatureInMapsWorker" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/creature.cpp StartLineNumber=2465 StartCharacterOffset=0 EndLineNumber=2465 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@10" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="299.873333333334,335.02,107.703333333333,25.8366666666666" CodeSchemaProperty_IsExternal="True" Label="invoke_main" SourceLocation="(Assembly=file:///f:/dd/vctools/crt/vcstartup/src/startup/exe_common.inl StartLineNumber=73 StartCharacterOffset=0 EndLineNumber=73 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+      <Category Ref="CurrentCallStackEntry" />
       <Category Ref="ExternalCallStackEntry" />
     </Node>
-    <Node Id="@11" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="674.4,165.719999999999,129.343333333333,25.24" CodeSchemaProperty_IsExternal="True" Label="mainCRTStartup" SourceLocation="(Assembly=file:///f:/dd/vctools/crt/vcstartup/src/startup/exe_main.cpp StartLineNumber=16 StartCharacterOffset=0 EndLineNumber=16 EndCharacterOffset=0)">
+    <Node Id="@11" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="289.053339436849,155.817008141009,129.343333333333,25.8366666666667" CodeSchemaProperty_IsExternal="True" Label="mainCRTStartup" SourceLocation="(Assembly=file:///f:/dd/vctools/crt/vcstartup/src/startup/exe_main.cpp StartLineNumber=16 StartCharacterOffset=0 EndLineNumber=16 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
+      <Category Ref="CurrentCallStackEntry" />
       <Category Ref="ExternalCallStackEntry" />
     </Node>
-    <Node Id="@12" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="709.761666666666,441.919999999998,58.6199999999999,25.24" Label="Run" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/mangosd/master.cpp StartLineNumber=201 StartCharacterOffset=0 EndLineNumber=201 EndCharacterOffset=0)">
+    <Node Id="@12" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="442.414975585938,435.000841474342,58.6199999999999,25.8366666666666" Label="Run" SourceLocation="(Assembly=file:///d:/gitsourcecode/mygit/mangos-classic/src/mangosd/master.cpp StartLineNumber=201 StartCharacterOffset=0 EndLineNumber=201 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+      <Category Ref="CurrentCallStackEntry" />
+    </Node>
+    <Node Id="@14" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="429.971657511393,602.511141474342,83.5066666666667,25.8366666666666" Label="Initialize" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/gameeventmgr.cpp StartLineNumber=579 StartCharacterOffset=0 EndLineNumber=579 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="@14" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="431.318333333333,560.019999999998,83.5066666666667,25.24" Label="Initialize" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/gameeventmgr.cpp StartLineNumber=579 StartCharacterOffset=0 EndLineNumber=579 EndCharacterOffset=0)">
+    <Node Id="@16" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="544.205006103516,602.511141474342,125.04,25.8366666666666" Label="LoadTransports" SourceLocation="(Assembly=file:///d:/gitsourcecode/mygit/mangos-classic/src/game/transports.cpp StartLineNumber=111 StartCharacterOffset=0 EndLineNumber=111 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="@16" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="863.551666666666,560.019999999998,125.04,25.24" Label="LoadTransports" SourceLocation="(Assembly=file:///d:/gitsourcecode/mygit/mangos-classic/src/game/transports.cpp StartLineNumber=111 StartCharacterOffset=0 EndLineNumber=111 EndCharacterOffset=0)">
+    <Node Id="@17" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="17.7583333333334,645.876666666666,85.9333333333333,25.8366666666667" Label="InitPools" SourceLocation="(Assembly=file:///d:/gitsourcecode/mygit/mangos-classic/src/game/mappersistentstatemgr.cpp StartLineNumber=195 StartCharacterOffset=0 EndLineNumber=195 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="@17" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="655.273333333333,497.159999999998,167.596666666667,25.2400000000001" Label="SetInitialWorldSettings" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/world.cpp StartLineNumber=807 StartCharacterOffset=0 EndLineNumber=807 EndCharacterOffset=0)">
+    <Node Id="@18" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="0,566.284999999999,121.45,25.8366666666667" Label="InitWorldMaps" SourceLocation="(Assembly=file:///d:/gitsourcecode/mygit/mangos-classic/src/game/mappersistentstatemgr.cpp StartLineNumber=961 StartCharacterOffset=0 EndLineNumber=961 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="@19" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="433.965,638.119999999998,78.2133333333334,25.24" Label="Update" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/gameeventmgr.cpp StartLineNumber=627 StartCharacterOffset=0 EndLineNumber=627 EndCharacterOffset=0)">
+    <Node Id="@19" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="387.926642252604,490.837608141009,167.596666666667,25.8366666666665" Label="SetInitialWorldSettings" SourceLocation="(Assembly=file:///d:/gitsourcecode/mygit/mangos-classic/src/game/world.cpp StartLineNumber=1005 StartCharacterOffset=0 EndLineNumber=1005 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+      <Category Ref="CurrentCallStackEntry" />
+    </Node>
+    <Node Id="@21" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="412.61832417806,658.347908141009,78.2133333333334,25.8366666666666" Label="Update" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/gameeventmgr.cpp StartLineNumber=627 StartCharacterOffset=0 EndLineNumber=627 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="@20" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="181.436666666666,834.319999999998,139.27,25.24" Label="GameEventSpawn" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/gameeventmgr.cpp StartLineNumber=679 StartCharacterOffset=0 EndLineNumber=679 EndCharacterOffset=0)">
+    <Node Id="@22" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="302.09,845.059999999999,139.27,25.8366666666666" Label="GameEventSpawn" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/gameeventmgr.cpp StartLineNumber=679 StartCharacterOffset=0 EndLineNumber=679 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="@23" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="13.8766666666663,904.799999999998,132.39,25.24" Label="GetCreatureData" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/objectmgr.h StartLineNumber=751 StartCharacterOffset=0 EndLineNumber=751 EndCharacterOffset=0)">
+    <Node Id="@25" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="476.53,916.733333333332,132.39,25.8366666666666" Label="GetCreatureData" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/objectmgr.h StartLineNumber=751 StartCharacterOffset=0 EndLineNumber=751 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="@24" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="868.068333333333,708.599999999998,148.006666666667,25.24" Label="CreateInstanceData" SourceLocation="(Assembly=file:///d:/gitsourcecode/mygit/mangos-classic/src/game/map.cpp StartLineNumber=1190 StartCharacterOffset=0 EndLineNumber=1190 EndCharacterOffset=0)">
+    <Node Id="@26" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="798.721666666667,717.549999999999,148.006666666667,25.8366666666666" Label="CreateInstanceData" SourceLocation="(Assembly=file:///d:/gitsourcecode/mygit/mangos-classic/src/game/map.cpp StartLineNumber=1190 StartCharacterOffset=0 EndLineNumber=1190 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="@25" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="326.07,1015.28,86.0033333333333,25.24" Label="operator" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/creature.cpp StartLineNumber=2473 StartCharacterOffset=0 EndLineNumber=2473 EndCharacterOffset=0)">
+    <Node Id="@27" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="822.723333333334,1028.40666666667,86.0033333333333,25.8366666666666" Label="operator" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/creature.cpp StartLineNumber=2473 StartCharacterOffset=0 EndLineNumber=2473 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="@26" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="443.07,1015.28,86.0033333333333,25.24" Label="operator" SourceLocation="(Assembly=file:///d:/gitsourcecode/mygit/mangos-classic/src/game/creature.cpp StartLineNumber=2473 StartCharacterOffset=0 EndLineNumber=2473 EndCharacterOffset=0)">
+    <Node Id="@28" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="705.723333333334,1028.40666666667,86.0033333333333,25.8366666666666" Label="operator" SourceLocation="(Assembly=file:///d:/gitsourcecode/mygit/mangos-classic/src/game/creature.cpp StartLineNumber=2473 StartCharacterOffset=0 EndLineNumber=2473 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="@27" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="448.261666666666,1125.76,75.62,25.24" Label="loaded" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/map.cpp StartLineNumber=440 StartCharacterOffset=0 EndLineNumber=440 EndCharacterOffset=0)">
+    <Node Id="@29" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="827.915,1140.08,75.6199999999999,25.8366666666666" Label="loaded" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/map.cpp StartLineNumber=440 StartCharacterOffset=0 EndLineNumber=440 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="@28" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="1005.06833333333,763.839999999998,148.006666666667,25.24" Label="CreateInstanceData" SourceLocation="(Assembly=file:///d:/gitsourcecode/mygit/mangos-classic/src/game/scriptmgr.cpp StartLineNumber=2224 StartCharacterOffset=0 EndLineNumber=2224 EndCharacterOffset=0)">
+    <Node Id="@3" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="246.576642252604,99.9802414743425,214.296666666667,25.8366666666666" CodeSchemaProperty_IsExternal="True" Label="BaseThreadInitThunk + 18 字节">
       <Category Ref="CallStackEntry" />
-      <Category Ref="CodeSchema_SourceLocation" />
-    </Node>
-    <Node Id="@29" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="347.948333333333,960.039999999998,182.246666666667,25.24" Label="DoForAllMapsWithMapId" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/mapmanager.h StartLineNumber=191 StartCharacterOffset=0 EndLineNumber=191 EndCharacterOffset=0)">
-      <Category Ref="CallStackEntry" />
-      <Category Ref="CodeSchema_SourceLocation" />
-    </Node>
-    <Node Id="@3" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="631.923333333333,110.48,214.296666666667,25.24" CodeSchemaProperty_IsExternal="True" Label="BaseThreadInitThunk + 18 字节">
-      <Category Ref="CallStackEntry" />
+      <Category Ref="CurrentCallStackEntry" />
       <Category Ref="ExternalCallStackEntry" />
     </Node>
-    <Node Id="@30" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="706.84,386.679999999998,64.4633333333334,25.24" Label="main" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/mangosd/main.cpp StartLineNumber=204 StartCharacterOffset=0 EndLineNumber=204 EndCharacterOffset=0)">
+    <Node Id="@30" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="935.721666666667,773.386666666666,148.006666666667,25.8366666666666" Label="CreateInstanceData" SourceLocation="(Assembly=file:///d:/gitsourcecode/mygit/mangos-classic/src/game/scriptmgr.cpp StartLineNumber=2224 StartCharacterOffset=0 EndLineNumber=2224 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="@31" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="678.101666666666,708.599999999998,159.94,25.24" Label="CheckOneGameEvent" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/gameeventmgr.cpp StartLineNumber=41 StartCharacterOffset=0 EndLineNumber=41 EndCharacterOffset=0)">
+    <Node Id="@31" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="774.601666666667,972.569999999999,182.246666666667,25.8366666666666" Label="DoForAllMapsWithMapId" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/mapmanager.h StartLineNumber=191 StartCharacterOffset=0 EndLineNumber=191 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="@32" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="547.78,904.799999999998,116.583333333333,25.24" Label="SpawnInMaps" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/creature.cpp StartLineNumber=2497 StartCharacterOffset=0 EndLineNumber=2497 EndCharacterOffset=0)">
+    <Node Id="@32" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="439.493339436849,379.164074807676,64.4633333333334,25.8366666666666" Label="main" SourceLocation="(Assembly=file:///d:/gitsourcecode/mygit/mangos-classic/src/mangosd/main.cpp StartLineNumber=204 StartCharacterOffset=0 EndLineNumber=204 EndCharacterOffset=0)">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+      <Category Ref="CurrentCallStackEntry" />
+    </Node>
+    <Node Id="@33" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="180.755,717.549999999999,159.94,25.8366666666666" Label="CheckOneGameEvent" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/gameeventmgr.cpp StartLineNumber=41 StartCharacterOffset=0 EndLineNumber=41 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="@33" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="177.075,904.799999999998,147.993333333333,25.24" Label="AddCreatureToGrid" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/objectmgr.cpp StartLineNumber=1115 StartCharacterOffset=0 EndLineNumber=1115 EndCharacterOffset=0)">
+    <Node Id="@34" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="807.433333333334,916.733333333332,116.583333333333,25.8366666666666" Label="SpawnInMaps" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/creature.cpp StartLineNumber=2497 StartCharacterOffset=0 EndLineNumber=2497 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="@34" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="1088.395,638.119999999998,99.3533333333335,25.24" Label="CreateMap" SourceLocation="(Assembly=file:///d:/gitsourcecode/mygit/mangos-classic/src/game/mapmanager.cpp StartLineNumber=120 StartCharacterOffset=0 EndLineNumber=120 EndCharacterOffset=0)">
+    <Node Id="@35" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="297.728333333334,916.733333333332,147.993333333333,25.8366666666666" Label="AddCreatureToGrid" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/objectmgr.cpp StartLineNumber=1115 StartCharacterOffset=0 EndLineNumber=1115 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="@35" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="362.61,763.839999999998,126.923333333333,25.24" Label="ApplyNewEvent" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/gameeventmgr.cpp StartLineNumber=674 StartCharacterOffset=0 EndLineNumber=674 EndCharacterOffset=0)">
+    <Node Id="@36" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="625.048308919271,658.347908141009,99.3533333333335,25.8366666666666" Label="CreateMap" SourceLocation="(Assembly=file:///d:/gitsourcecode/mygit/mangos-classic/src/game/mapmanager.cpp StartLineNumber=120 StartCharacterOffset=0 EndLineNumber=120 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="@37" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="442.24,1070.52,87.6633333333333,25.2399999999998" Label="IsLoaded" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/map.h StartLineNumber=148 StartCharacterOffset=0 EndLineNumber=148 EndCharacterOffset=0)">
+    <Node Id="@37" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="657.263333333333,773.386666666666,126.923333333333,25.8366666666666" Label="ApplyNewEvent" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/gameeventmgr.cpp StartLineNumber=674 StartCharacterOffset=0 EndLineNumber=674 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="@38" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="184.965,960.039999999998,132.213333333333,25.24" Label="ComputeCellPair" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/griddefines.h StartLineNumber=157 StartCharacterOffset=0 EndLineNumber=157 EndCharacterOffset=0)">
+    <Node Id="@39" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="821.893333333334,1084.24333333333,87.6633333333334,25.8366666666666" Label="IsLoaded" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/map.h StartLineNumber=148 StartCharacterOffset=0 EndLineNumber=148 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="@39" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="552.745,708.599999999998,94.6533333333334,25.24" Label="StartEvent" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/gameeventmgr.cpp StartLineNumber=73 StartCharacterOffset=0 EndLineNumber=73 EndCharacterOffset=0)">
+    <Node Id="@40" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="305.618333333334,972.569999999999,132.213333333333,25.8366666666666" Label="ComputeCellPair" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/griddefines.h StartLineNumber=157 StartCharacterOffset=0 EndLineNumber=157 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
     </Node>
-    <Node Id="@5" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="616.511666666666,55.2399999999998,245.12,25.24" CodeSchemaProperty_IsExternal="True" Label="RtlInitializeExceptionChain + 99 字节">
+    <Node Id="@41" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="673.398333333334,717.549999999999,94.6533333333332,25.8366666666666" Label="StartEvent" SourceLocation="(Assembly=file:///c:/work/gitsourcecode/mangos-classic/src/game/gameeventmgr.cpp StartLineNumber=73 StartCharacterOffset=0 EndLineNumber=73 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
+      <Category Ref="CodeSchema_SourceLocation" />
+    </Node>
+    <Node Id="@5" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="231.164975585938,44.1434748076758,245.12,25.8366666666667" CodeSchemaProperty_IsExternal="True" Label="RtlInitializeExceptionChain + 99 字节">
+      <Category Ref="CallStackEntry" />
+      <Category Ref="CurrentCallStackEntry" />
       <Category Ref="ExternalCallStackEntry" />
     </Node>
-    <Node Id="@8" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="660.19,220.959999999999,157.763333333333,25.24" CodeSchemaProperty_IsExternal="True" Label="__scrt_common_main" SourceLocation="(Assembly=file:///f:/dd/vctools/crt/vcstartup/src/startup/exe_common.inl StartLineNumber=308 StartCharacterOffset=0 EndLineNumber=308 EndCharacterOffset=0)">
+    <Node Id="@8" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="274.843308919271,211.653774807676,157.763333333333,25.8366666666667" CodeSchemaProperty_IsExternal="True" Label="__scrt_common_main" SourceLocation="(Assembly=file:///f:/dd/vctools/crt/vcstartup/src/startup/exe_common.inl StartLineNumber=308 StartCharacterOffset=0 EndLineNumber=308 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
+      <Category Ref="CurrentCallStackEntry" />
       <Category Ref="ExternalCallStackEntry" />
     </Node>
-    <Node Id="@9" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="647.623333333333,276.199999999999,182.896666666667,25.24" CodeSchemaProperty_IsExternal="True" Label="__scrt_common_main_seh" SourceLocation="(Assembly=file:///f:/dd/vctools/crt/vcstartup/src/startup/exe_common.inl StartLineNumber=258 StartCharacterOffset=0 EndLineNumber=258 EndCharacterOffset=0)">
+    <Node Id="@9" Category="CodeSchema_CallStackUnresolvedMethod" Bounds="262.276672770182,267.490541474343,182.896666666667,25.8366666666666" CodeSchemaProperty_IsExternal="True" Label="__scrt_common_main_seh" SourceLocation="(Assembly=file:///f:/dd/vctools/crt/vcstartup/src/startup/exe_common.inl StartLineNumber=258 StartCharacterOffset=0 EndLineNumber=258 EndCharacterOffset=0)">
       <Category Ref="CallStackEntry" />
       <Category Ref="CodeSchema_SourceLocation" />
+      <Category Ref="CurrentCallStackEntry" />
       <Category Ref="ExternalCallStackEntry" />
     </Node>
-    <Node Id="ExternalCodeRootNode" Category="ExternalCallStackEntry" Bounds="587.071666666666,331.439999999999,68,25.24" Label="外部代码">
+    <Node Id="ExternalCodeRootNode" Category="ExternalCallStackEntry" Bounds="437.724975585938,323.327308141009,68,25.8366666666666" Label="外部代码">
       <Category Ref="CallStackEntry" />
     </Node>
-    <Node Id="加载传送点,如船,飞艇等" Category="Comment" Bounds="853.181666666666,497.159999999998,145.78,25.2400000000001" />
-    <Node Id="加载传送点时,需要自动加载传送点需要的地图." Category="Comment" Bounds="1018.62666666667,552.399999999998,238.89,40.48" Label="加载所有的传送点时,并自动加载传送点所涉及的地图." />
-    <Node Id="加载地图的实例脚本及其相关的存档数据(如果有的话)" Category="Comment" Bounds="822.071666666666,630.499999999998,236,40.48" />
-    <Node Id="在事件初始化时就会走一次逻辑，以刷新正在活动的事件及其数据" Category="Comment" Bounds="545.071666666666,552.399999999998,248,40.48" />
-    <Node Id="检测给定的活动是否正在活动。活动一个起始与结束时间，然后每隔指定时间（分钟）执行一次，一次持续n分钟。" Category="Comment" Bounds="543.071666666666,622.879999999998,248,55.72" />
-    <Node Id="脚本库中加载地图实例相关的脚本实例" Category="Comment" Bounds="1047.07166666667,708.599999999998,224,25.24" />
-    <Node Id="这里只在怪物所在Grid已经加载成功的情况下才生成怪物，并否并不生成。应该是为了省性能" Category="Comment" Bounds="530.883333333333,819.079999999998,248.376666666667,55.72" />
+    <Node Id="加载传送点,如船,飞艇等" Category="Comment" Bounds="585.834975585938,490.837608141009,145.78,25.8366666666665" />
+    <Node Id="加载传送点时,需要自动加载传送点需要的地图." Category="Comment" Bounds="699.28,558.366666666666,238.89,41.6733333333332" Label="加载所有的传送点时,并自动加载传送点所涉及的地图." />
+    <Node Id="加载地图的实例脚本及其相关的存档数据(如果有的话)" Category="Comment" Bounds="754.725,637.958333333333,236,41.6733333333332" />
+    <Node Id="在事件初始化时就会走一次逻辑，以刷新正在活动的事件及其数据" Category="Comment" Bounds="151.725,558.366666666666,248,41.6733333333332" />
+    <Node Id="检测给定的活动是否正在活动。活动一个起始与结束时间，然后每隔指定时间（分钟）执行一次，一次持续n分钟。" Category="Comment" Bounds="133.725,630.039999999999,248,57.51" />
+    <Node Id="脚本库中加载地图实例相关的脚本实例" Category="Comment" Bounds="977.725,717.549999999999,224,25.8366666666666" />
+    <Node Id="这里只在怪物所在Grid已经加载成功的情况下才生成怪物，并否并不生成。应该是为了省性能" Category="Comment" Bounds="836.536666666667,829.223333333332,248.376666666666,57.51" />
   </Nodes>
   <Links>
-    <Link Source="(Name=&quot;RtlInitializeExceptionChain() + 54 字节&quot; @4 @2)" Target="@5" Category="CallStackDirectCall" Bounds="739.071655273438,25.2399997711182,0,21.0000019073486" />
-    <Link Source="@10" Target="@30" Category="CallStackDirectCall" Bounds="739.071655273438,356.679992675781,0,21" />
-    <Link Source="@11" Target="@8" Category="CallStackDirectCall" Bounds="739.071655273438,190.960006713867,0,21" />
-    <Link Source="@12" Target="@17" Category="CallStackDirectCall" Bounds="739.071655273438,467.160003662109,0,21" />
-    <Link Source="@14" Target="@19" Category="CallStackDirectCall" Bounds="473.071655273438,585.260009765625,0,43.8599853515625" />
-    <Link Source="@16" Target="@34" Category="CallStackDirectCall" Bounds="960.328247070313,585.260009765625,135.041625976563,49.7488403320313" />
-    <Link Source="@17" Target="@14" Category="CallStackDirectCall" Bounds="516.779663085938,522.400024414063,156.584228515625,34.7514038085938" />
-    <Link Source="@17" Target="@16" Category="CallStackDirectCall" Bounds="776.614440917969,522.400024414063,103.383544921875,34.7523193359375" />
-    <Link Source="@19" Target="(Name=GameEventMgr::IsActiveEvent @6 @21 OverloadingParameters=[@22] @2)" Category="CallStackDirectCall" Bounds="370.22265625,663.359985351563,78.6762084960938,41.0748291015625" />
-    <Link Source="@19" Target="(Name=GameEventMgr::NextCheck @6 @13 OverloadingParameters=[(Type=&quot;unsigned short&quot; Name=entry)] @2)" Category="CallStackDirectCall" Bounds="473.071655273438,663.359985351563,0,36.239990234375" />
-    <Link Source="@19" Target="@20" Category="CallStackDirectCall" Bounds="251.071670532227,661.5107421875,183.122817993164,163.809265136719" />
-    <Link Source="@19" Target="@31" Category="CallStackDirectCall" Bounds="494.253997802734,663.359985351563,175.368011474609,45.435791015625" />
-    <Link Source="@19" Target="@39" Category="CallStackDirectCall" Bounds="495.81201171875,663.359985351563,73.64990234375,40.872802734375" />
-    <Link Source="@20" Target="(Name=&quot;MaNGOS::Singleton&lt;ObjectMgr,MaNGOS::SingleThreaded&lt;ObjectMgr&gt;,MaNGOS::OperatorNew&lt;ObjectMgr&gt;,MaNGOS::ObjectLifeTime&lt;ObjectMgr&gt; &gt;::Instance&quot; @6 Type=&quot;ObjectMgr &amp;&quot; @2)" Category="CallStackDirectCall" Bounds="277.930358886719,859.559997558594,88.1369934082031,41.4126586914063" />
-    <Link Source="@20" Target="@23" Category="CallStackDirectCall" Bounds="119.011497497559,859.559997558594,101.441276550293,41.8104248046875" />
-    <Link Source="@20" Target="@32" Category="CallStackDirectCall" Bounds="314.63720703125,859.559997558594,224.937438964844,44.6580200195313" />
-    <Link Source="@20" Target="@33" Category="CallStackDirectCall" Bounds="251.071670532227,859.559997558594,0,36.239990234375" />
-    <Link Source="@23" Target="(Name=ObjectMgr::GetCreatureDataPair @6 Type=&quot;const std::pair&lt;unsigned int const ,CreatureData&gt; *&quot; OverloadingParameters=[(@13 Name=guid)] @2)" Category="CallStackDirectCall" Bounds="78.2450942993164,930.039978027344,1.14119720458984,21.0132446289063" />
-    <Link Source="@24" Target="(Name=InstanceData::Load @18 @15 OverloadingParameters=[(Type=&quot;const char *&quot; Name=__formal)] @2)" Category="CallStackDirectCall" Bounds="942.071655273438,733.840026855469,0,21" />
-    <Link Source="@24" Target="@28" Category="CallStackDirectCall" Bounds="973.370361328125,733.840026855469,66.0555419921875,26.6343383789063" />
-    <Link Source="@25" Target="@37" Category="CallStackDirectCall" Bounds="395.801208496094,1040.52001953125,55.4024047851563,26.157470703125" />
-    <Link Source="@26" Target="@37" Category="CallStackDirectCall" Bounds="486.071655273438,1040.52001953125,0,21" />
-    <Link Source="@27" Target="(Name=Map::getNGrid @6 Type=&quot;NGrid&lt;16,Player,TypeList&lt;Player,TypeList&lt;Creature,TypeList&lt;Corpse,TypeList&lt;Camera,TypeNull&gt; &gt; &gt; &gt;,TypeList&lt;GameObject,TypeList&lt;Creature,TypeList&lt;DynamicObject,TypeList&lt;Corpse,TypeNull&gt; &gt; &gt; &gt; &gt; *&quot; OverloadingParameters=[(@13 Name=x),(@13 Name=y)] @2)" Category="CallStackDirectCall" Bounds="486.071655273438,1151,0,21" />
-    <Link Source="@29" Target="@25" Category="CallStackDirectCall" Bounds="392.128784179688,985.280029296875,30.9508361816406,24.4246215820313" />
-    <Link Source="@29" Target="@26" Category="CallStackDirectCall" Bounds="449.809173583984,985.280029296875,19.6928405761719,23.1453247070313" />
-    <Link Source="@3" Target="@11" Category="CallStackDirectCall" Bounds="739.071655273438,135.720001220703,0,21" />
-    <Link Source="@30" Target="@12" Category="CallStackDirectCall" Bounds="739.071655273438,411.920013427734,0,21" />
-    <Link Source="@32" Target="(Name=&quot;MaNGOS::Singleton&lt;MapManager,MaNGOS::ClassLevelLockable&lt;MapManager,std::recursive_mutex&gt;,MaNGOS::OperatorNew&lt;MapManager&gt;,MaNGOS::ObjectLifeTime&lt;MapManager&gt; &gt;::Instance&quot; @6 Type=&quot;MapManager &amp;&quot; @2)" Category="CallStackDirectCall" Bounds="606.071655273438,930.039978027344,0,21" />
-    <Link Source="@32" Target="(Name=SpawnCreatureInMapsWorker::SpawnCreatureInMapsWorker @6 @15 OverloadingParameters=[(@13 Name=guid),(Type=&quot;const CreatureData *&quot; Name=data)] @2)" Category="CallStackDirectCall" Bounds="647.194030761719,930.039978027344,89.1513061523438,27.3595581054688" />
-    <Link Source="@32" Target="@29" Category="CallStackDirectCall" Bounds="485.768768310547,930.039978027344,82.1504821777344,27.1736450195313" />
-    <Link Source="@33" Target="@38" Category="CallStackDirectCall" Bounds="251.071670532227,930.039978027344,0,21" />
-    <Link Source="@34" Target="@24" Category="CallStackDirectCall" Bounds="985.636108398438,663.359985351563,117.340209960938,42.194580078125" />
-    <Link Source="@35" Target="(Name=GameEventMgr::UpdateCreatureData @6 @15 OverloadingParameters=[(Type=short Name=event_id),(@21 Name=activate)] @2)" Category="CallStackDirectCall" Bounds="489.533325195313,781.72021484375,356.677185058594,49.339599609375" />
-    <Link Source="@35" Target="(Name=GameEventMgr::UpdateEventQuests @6 @15 OverloadingParameters=[@22,(@21 Name=Activate)] @2)" Category="CallStackDirectCall" Bounds="426.071655273438,789.080017089844,0,36.239990234375" />
-    <Link Source="@35" Target="@20" Category="CallStackDirectCall" Bounds="290.755157470703,789.080017089844,103.981384277344,41.8777465820313" />
-    <Link Source="@37" Target="@27" Category="CallStackDirectCall" Bounds="486.071655273438,1095.76000976563,0,21" />
-    <Link Source="@38" Target="(Name=&quot;MaNGOS::Compute&lt;CoordPair&lt;1024&gt;,512&gt;&quot; @6 Type=CoordPair&lt;1024&gt; OverloadingParameters=[(@36 Name=x),(@36 Name=y),(@36 Name=center_offset),(@36 Name=size)] @2)" Category="CallStackDirectCall" Bounds="251.071670532227,985.280029296875,0,21" />
-    <Link Source="@39" Target="@35" Category="CallStackDirectCall" Bounds="474.401397705078,733.840026855469,85.9186096191406,27.2766723632813" />
-    <Link Source="@5" Target="@3" Category="CallStackIndirectCall" Bounds="739.071655273438,80.4800033569336,0,21" />
-    <Link Source="@8" Target="@9" Category="CallStackDirectCall" Bounds="739.071655273438,246.199996948242,0,21.0000152587891" />
-    <Link Source="@9" Target="@10" Category="CallStackDirectCall" Bounds="739.071655273438,301.440002441406,0,21" />
-    <Link Source="ExternalCodeRootNode" Target="@30" Category="CallStackIndirectCall" Bounds="648.029663085938,356.679992675781,55.9329223632813,26.1842041015625" />
-    <Link Source="加载传送点,如船,飞艇等" Target="@16" Bounds="926.071655273438,522.400024414063,0,28.6199951171875" />
-    <Link Source="加载传送点时,需要自动加载传送点需要的地图." Target="@34" Bounds="1138.07165527344,592.880004882813,0,36.239990234375" />
-    <Link Source="加载地图的实例脚本及其相关的存档数据(如果有的话)" Target="@24" Bounds="940.64599609375,670.97998046875,0.812255859375,28.6236572265625" />
-    <Link Source="在事件初始化时就会走一次逻辑，以刷新正在活动的事件及其数据" Target="@19" Bounds="510.605743408203,592.880004882813,105.288421630859,41.68115234375" />
-    <Link Source="检测给定的活动是否正在活动。活动一个起始与结束时间，然后每隔指定时间（分钟）执行一次，一次持续n分钟。" Target="@31" Bounds="703.043029785156,678.599975585938,31.6189575195313,24.4890747070313" />
-    <Link Source="脚本库中加载地图实例相关的脚本实例" Target="@28" Bounds="1104.75427246094,733.840026855469,36.040771484375,24.8861083984375" />
-    <Link Source="这里只在怪物所在Grid已经加载成功的情况下才生成怪物，并否并不生成。应该是为了省性能" Target="@32" Bounds="619.982971191406,874.799987792969,15.719482421875,22.6104125976563" />
+    <Link Source="(Name=&quot;RtlInitializeExceptionChain() + 54 字节&quot; @4 @2)" Target="@5" Category="CallStackDirectCall" Bounds="353.724975585938,14.1433747227987,0,21.0001014836629">
+      <Category Ref="CurrentCallStackCall" />
+    </Link>
+    <Link Source="@10" Target="@32" Category="CallStackDirectCall" Bounds="388.256544637397,360.856657307943,43.4768903882509,16.2647970468776">
+      <Category Ref="CurrentCallStackCall" />
+    </Link>
+    <Link Source="@11" Target="@8" Category="CallStackDirectCall" Bounds="353.724999544868,181.653684895833,2.29551955612806E-05,21.0000871785535">
+      <Category Ref="CurrentCallStackCall" />
+    </Link>
+    <Link Source="@12" Target="@19" Category="CallStackDirectCall" Bounds="471.724975585938,460.837507527669,0,21.0000948079428">
+      <Category Ref="CurrentCallStackCall" />
+    </Link>
+    <Link Source="@14" Target="@21" Category="CallStackDirectCall" Bounds="459.387045528576,628.347837727865,7.71076420725859,21.5271933256901" />
+    <Link Source="@16" Target="@36" Category="CallStackDirectCall" Bounds="622.457438270291,628.347837727865,29.5795779360905,24.2886531985553" />
+    <Link Source="@17" Target="(Name=GameEventMgr::Initialize @6 @15 OverloadingParameters=[(Type=&quot;MapPersistentState * {WorldPersistentState}&quot; Name=state)] @2)" Category="CallStackDirectCall" Bounds="60.7249994277954,671.71331624349,0,36.8366731770833" />
+    <Link Source="@18" Target="@17" Category="CallStackDirectCall" Bounds="60.7249986289097,592.121641438802,5.36258376371279E-07,44.7550081380209" />
+    <Link Source="@19" Target="(Name=&quot;MaNGOS::Singleton&lt;MapPersistentStateManager,MaNGOS::SingleThreaded&lt;MapPersistentStateManager&gt;,MaNGOS::OperatorNew&lt;MapPersistentStateManager&gt;,MaNGOS::ObjectLifeTime&lt;MapPersistentStateManager&gt; &gt;::Instance&quot; @6 Type=&quot;MapPersistentStateManager &amp;&quot; @2)" Category="CallStackDirectCall" Bounds="492.547280565817,516.674269002279,40.707695509418,25.2553970528554">
+      <Category Ref="CurrentCallStackCall" />
+    </Link>
+    <Link Source="@19" Target="@14" Category="CallStackDirectCall" Bounds="471.724977351065,516.674269002279,1.04987965414693E-05,76.8369020589195" />
+    <Link Source="@19" Target="@16" Category="CallStackDirectCall" Bounds="479.288665771484,516.674255371094,72.3454284667969,82.9247436523438" />
+    <Link Source="@19" Target="@18" Category="CallStackDirectCall" Bounds="111.849960327148,516.674255371094,283.689682006836,48.103759765625" />
+    <Link Source="@21" Target="(Name=GameEventMgr::IsActiveEvent @6 @23 OverloadingParameters=[@24] @2)" Category="CallStackDirectCall" Bounds="481.182992642296,684.184568684896,67.8417281253476,29.7508997336308" />
+    <Link Source="@21" Target="(Name=GameEventMgr::NextCheck @6 @13 OverloadingParameters=[(Type=&quot;unsigned short&quot; Name=entry)] @2)" Category="CallStackDirectCall" Bounds="451.724990844727,684.184568684896,0,24.3654207356772" />
+    <Link Source="@21" Target="@22" Category="CallStackDirectCall" Bounds="374.752105712891,684.1845703125,55.8243713378906,151.960693359375" />
+    <Link Source="@21" Target="@33" Category="CallStackDirectCall" Bounds="310.999132011404,683.158137121639,102.359761347735,31.7272880728358" />
+    <Link Source="@21" Target="@41" Category="CallStackDirectCall" Bounds="490.831657511393,679.872913527554,173.817059131187,38.2540271762565" />
+    <Link Source="@22" Target="(Name=&quot;MaNGOS::Singleton&lt;ObjectMgr,MaNGOS::SingleThreaded&lt;ObjectMgr&gt;,MaNGOS::OperatorNew&lt;ObjectMgr&gt;,MaNGOS::ObjectLifeTime&lt;ObjectMgr&gt; &gt;::Instance&quot; @6 Type=&quot;ObjectMgr &amp;&quot; @2)" Category="CallStackDirectCall" Bounds="256.881457861048,870.896665852865,87.8076824352432,41.9564721625379" />
+    <Link Source="@22" Target="@25" Category="CallStackDirectCall" Bounds="402.545865172835,870.896665852865,101.057872994093,42.3576331870886" />
+    <Link Source="@22" Target="@34" Category="CallStackDirectCall" Bounds="441.354340963902,868.080696730141,357.172255718396,51.8213110852893" />
+    <Link Source="@22" Target="@35" Category="CallStackDirectCall" Bounds="371.724993594956,870.896665852865,7.84228882366733E-06,36.8366731770836" />
+    <Link Source="@25" Target="(Name=ObjectMgr::GetCreatureDataPair @6 Type=&quot;const std::pair&lt;unsigned int const ,CreatureData&gt; *&quot; OverloadingParameters=[(@13 Name=guid)] @2)" Category="CallStackDirectCall" Bounds="543.419065239494,942.570005696615,1.12898164004844,21.0129652718824" />
+    <Link Source="@26" Target="(Name=InstanceData::Load @20 @15 OverloadingParameters=[(Type=&quot;const char *&quot; Name=__formal)] @2)" Category="CallStackDirectCall" Bounds="872.724987565408,743.38665608724,1.14775898509833E-05,21.000064290366" />
+    <Link Source="@26" Target="@30" Category="CallStackDirectCall" Bounds="904.421189638908,743.38665608724,65.2732373746518,26.60324821788" />
+    <Link Source="@27" Target="@39" Category="CallStackDirectCall" Bounds="865.724987565421,1054.24340657552,1.14775692736657E-05,21.0000032552098" />
+    <Link Source="@28" Target="@39" Category="CallStackDirectCall" Bounds="775.794014662135,1054.24340657552,54.7394781115228,26.1236766752888" />
+    <Link Source="@29" Target="(Name=Map::getNGrid @6 Type=&quot;NGrid&lt;16,Player,TypeList&lt;Player,TypeList&lt;Creature,TypeList&lt;Corpse,TypeList&lt;Camera,TypeNull&gt; &gt; &gt; &gt;,TypeList&lt;GameObject,TypeList&lt;Creature,TypeList&lt;DynamicObject,TypeList&lt;Corpse,TypeNull&gt; &gt; &gt; &gt; &gt; *&quot; OverloadingParameters=[(@13 Name=x),(@13 Name=y)] @2)" Category="CallStackDirectCall" Bounds="865.724975585938,1165.91662434896,0,21.0000032552082" />
+    <Link Source="@3" Target="@11" Category="CallStackDirectCall" Bounds="353.724989706963,125.816911977132,2.29552085215801E-05,21.0001062520399">
+      <Category Ref="CurrentCallStackCall" />
+    </Link>
+    <Link Source="@31" Target="@27" Category="CallStackDirectCall" Bounds="865.725006103516,998.40667561849,1.13686837721616E-13,21.0000642903647" />
+    <Link Source="@31" Target="@28" Category="CallStackDirectCall" Bounds="783.916434615533,998.40667561849,54.7395549404456,26.1237350827705" />
+    <Link Source="@32" Target="@12" Category="CallStackDirectCall" Bounds="471.724999544858,405.000730794271,2.29552111932207E-05,21.0001100667373">
+      <Category Ref="CurrentCallStackCall" />
+    </Link>
+    <Link Source="@34" Target="(Name=&quot;MaNGOS::Singleton&lt;MapManager,MaNGOS::ClassLevelLockable&lt;MapManager,std::recursive_mutex&gt;,MaNGOS::OperatorNew&lt;MapManager&gt;,MaNGOS::ObjectLifeTime&lt;MapManager&gt; &gt;::Instance&quot; @6 Type=&quot;MapManager &amp;&quot; @2)" Category="CallStackDirectCall" Bounds="745.897526686236,942.570005696615,81.1904678633771,27.1461348889562" />
+    <Link Source="@34" Target="(Name=SpawnCreatureInMapsWorker::SpawnCreatureInMapsWorker @6 @15 OverloadingParameters=[(@13 Name=guid),(Type=&quot;const CreatureData *&quot; Name=data)] @2)" Category="CallStackDirectCall" Bounds="918.012209789163,942.570005696615,112.688309440099,27.8413271604467" />
+    <Link Source="@34" Target="@31" Category="CallStackDirectCall" Bounds="865.725006103516,942.570005696615,0,21.0000032552084" />
+    <Link Source="@35" Target="@40" Category="CallStackDirectCall" Bounds="371.725006103516,942.570005696615,0,21.0000032552084" />
+    <Link Source="@36" Target="@26" Category="CallStackDirectCall" Bounds="717.930046664816,684.184568684896,102.967083108872,30.7871985566925" />
+    <Link Source="@37" Target="(Name=GameEventMgr::UpdateCreatureData @6 @15 OverloadingParameters=[(Type=short Name=event_id),(@23 Name=activate)] @2)" Category="CallStackDirectCall" Bounds="722.166889063102,799.223387044271,4.11781433702424,36.8921568824455" />
+    <Link Source="@37" Target="(Name=GameEventMgr::UpdateEventQuests @6 @15 OverloadingParameters=[@24,(@23 Name=Activate)] @2)" Category="CallStackDirectCall" Bounds="586.408279844197,799.223387044271,102.95508311388,42.4087912126246" />
+    <Link Source="@37" Target="@22" Category="CallStackDirectCall" Bounds="443.444472217296,798.969819861095,215.611729920174,44.2796570447731" />
+    <Link Source="@39" Target="@29" Category="CallStackDirectCall" Bounds="865.724975585938,1110.0800764974,0,20.9998811848961" />
+    <Link Source="@40" Target="(Name=&quot;MaNGOS::Compute&lt;CoordPair&lt;1024&gt;,512&gt;&quot; @6 Type=CoordPair&lt;1024&gt; OverloadingParameters=[(@38 Name=x),(@38 Name=y),(@38 Name=center_offset),(@38 Name=size)] @2)" Category="CallStackDirectCall" Bounds="371.725006103516,998.40667561849,5.6843418860808E-14,21.0000642903647" />
+    <Link Source="@41" Target="@37" Category="CallStackDirectCall" Bounds="720.724975585938,743.38665608724,0,21.0000642903647" />
+    <Link Source="@5" Target="@3" Category="CallStackIndirectCall" Bounds="353.724975585938,69.9801428731282,5.6843418860808E-14,21.0001024373373">
+      <Category Ref="CurrentCallStackCall" />
+    </Link>
+    <Link Source="@8" Target="@9" Category="CallStackDirectCall" Bounds="353.724989706968,237.490438741048,2.29551955612806E-05,21.0000871785535">
+      <Category Ref="CurrentCallStackCall" />
+    </Link>
+    <Link Source="@9" Target="@10" Category="CallStackDirectCall" Bounds="353.724995396385,293.327192586263,2.95487317316656E-05,32.6927980550168">
+      <Category Ref="CurrentCallStackCall" />
+    </Link>
+    <Link Source="ExternalCodeRootNode" Target="@32" Category="CallStackIndirectCall" Bounds="471.724989706966,349.163969319661,2.29552006771883E-05,21.0000948079482" />
+    <Link Source="加载传送点,如船,飞艇等" Target="@16" Bounds="616.539464148188,516.674269002279,36.1701888101406,77.6780539807465" />
+    <Link Source="加载传送点时,需要自动加载传送点需要的地图." Target="@36" Bounds="702.513929485852,600.040005289713,83.6194382648894,53.4600422083748" />
+    <Link Source="加载地图的实例脚本及其相关的存档数据(如果有的话)" Target="@26" Bounds="872.72498445792,679.631649576823,1.2313053730395E-05,28.918339843751" />
+    <Link Source="在事件初始化时就会走一次逻辑，以刷新正在活动的事件及其数据" Target="@21" Bounds="319.667724609375,600.039978027344,114.827850341797,54.4487915039063" />
+    <Link Source="检测给定的活动是否正在活动。活动一个起始与结束时间，然后每隔指定时间（分钟）执行一次，一次持续n分钟。" Target="@33" Bounds="258.928573433073,687.549982910156,0.879326704340087,21.0078802014085" />
+    <Link Source="脚本库中加载地图实例相关的脚本实例" Target="@30" Bounds="1035.61385643156,743.38665608724,35.6023947188105,24.8490166917532" />
+    <Link Source="这里只在怪物所在Grid已经加载成功的情况下才生成怪物，并否并不生成。应该是为了省性能" Target="@34" Bounds="890.032317182832,886.733332519531,32.5791448057412,24.5795380787434" />
   </Links>
   <Categories>
+    <Category Id="BaseCustomContent" CanBeDataDriven="True" IsProviderRoot="False" />
     <Category Id="CallStackDirectCall" Label="调用堆栈直接调用" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="调用堆栈直接调用" OutgoingActionLabel="调用堆栈直接调用" />
     <Category Id="CallStackEntry" Label="调用堆栈入口" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="调用堆栈入口" />
     <Category Id="CallStackIndirectCall" Label="调用堆栈间接调用" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="调用堆栈间接调用" OutgoingActionLabel="调用堆栈间接调用" />
     <Category Id="CodeSchema_CallStackUnresolvedMethod" Label="未解析的方法" CanBeDataDriven="True" DefaultAction="Microsoft.AllOutBoundLinks" IsProviderRoot="False" NavigationActionLabel="未解析的方法" />
     <Category Id="CodeSchema_SourceLocation" Label="源位置" Icon="File" />
     <Category Id="Comment" Label="注释" Description="表示在图表中用户定义的注释" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="注释" />
+    <Category Id="CurrentCallStackCall" Label="当前调用堆栈调用" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="当前调用堆栈调用" OutgoingActionLabel="当前调用堆栈调用" />
+    <Category Id="CurrentCallStackEntry" Label="当前调用堆栈入口" BasedOn="BaseCustomContent" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="当前调用堆栈入口" />
     <Category Id="ExternalCallStackEntry" Label="外部调用堆栈入口" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="外部调用堆栈入口" />
   </Categories>
   <Properties>
@@ -281,29 +335,31 @@
     <Alias n="14" Id="(Name=GameEventMgr::Initialize @6 @13 @2)" />
     <Alias n="15" Id="Type=void" />
     <Alias n="16" Id="(Name=MapManager::LoadTransports @6 @15 @2)" />
-    <Alias n="17" Id="(Name=World::SetInitialWorldSettings @6 @15 @2)" />
-    <Alias n="18" Uri="Assembly=mangosscript.dll" />
-    <Alias n="19" Id="(Name=GameEventMgr::Update @6 @13 OverloadingParameters=[(Type=&quot;const std::set&lt;unsigned short,std::less&lt;unsigned short&gt;,std::allocator&lt;unsigned short&gt; &gt; *&quot; Name=activeAtShutdown)] @2)" />
-    <Alias n="20" Id="(Name=GameEventMgr::GameEventSpawn @6 @15 OverloadingParameters=[(Type=short Name=event_id)] @2)" />
-    <Alias n="21" Id="Type=bool" />
-    <Alias n="22" Id="(Type=&quot;unsigned short&quot; Name=event_id)" />
-    <Alias n="23" Id="(Name=ObjectMgr::GetCreatureData @6 Type=&quot;const CreatureData *&quot; OverloadingParameters=[(@13 Name=guid)] @2)" />
-    <Alias n="24" Id="(Name=Map::CreateInstanceData @6 @15 OverloadingParameters=[(@21 Name=load)] @2)" />
-    <Alias n="25" Id="(Name=&quot;SpawnCreatureInMapsWorker::operator()&quot; @6 @15 OverloadingParameters=[(Type=&quot;Map *&quot; Name=map)] @2)" />
-    <Alias n="26" Id="(Name=&quot;SpawnCreatureInMapsWorker::operator()&quot; @6 @15 OverloadingParameters=[(Type=&quot;Map * {WorldMap}&quot; Name=map)] @2)" />
-    <Alias n="27" Id="(Name=Map::loaded @6 @21 OverloadingParameters=[(Type=&quot;const CoordPair&lt;64&gt; &amp;&quot; Name=p)] @2)" />
-    <Alias n="28" Id="(Name=ScriptMgr::CreateInstanceData @6 Type=&quot;InstanceData *&quot; OverloadingParameters=[(Type=&quot;Map * {WorldMap}&quot; Name=pMap)] @2)" />
-    <Alias n="29" Id="(Name=MapManager::DoForAllMapsWithMapId&lt;SpawnCreatureInMapsWorker&gt; @6 @15 OverloadingParameters=[(@13 Name=mapId),(Type=&quot;SpawnCreatureInMapsWorker &amp;&quot; Name=_do)] @2)" />
-    <Alias n="30" Id="(Name=main @6 @7 OverloadingParameters=[(@7 Name=argc),(Type=&quot;char * *&quot; Name=argv)] @2)" />
-    <Alias n="31" Id="(Name=GameEventMgr::CheckOneGameEvent @6 @21 OverloadingParameters=[(Type=&quot;unsigned short&quot; Name=entry),(Type=__int64 Name=currenttime)] @2)" />
-    <Alias n="32" Id="(Name=Creature::SpawnInMaps @6 @15 OverloadingParameters=[(@13 Name=db_guid),(Type=&quot;const CreatureData *&quot; Name=data)] @2)" />
-    <Alias n="33" Id="(Name=ObjectMgr::AddCreatureToGrid @6 @15 OverloadingParameters=[(@13 Name=guid),(Type=&quot;const CreatureData *&quot; Name=data)] @2)" />
-    <Alias n="34" Id="(Name=MapManager::CreateMap @6 Type=&quot;Map *&quot; OverloadingParameters=[(@13 Name=id),(Type=&quot;const WorldObject * {Transport}&quot; Name=obj)] @2)" />
-    <Alias n="35" Id="(Name=GameEventMgr::ApplyNewEvent @6 @15 OverloadingParameters=[@22,(@21 Name=resume)] @2)" />
-    <Alias n="36" Id="Type=float" />
-    <Alias n="37" Id="(Name=Map::IsLoaded @6 @21 OverloadingParameters=[(@36 Name=x),(@36 Name=y)] @2)" />
-    <Alias n="38" Id="(Name=MaNGOS::ComputeCellPair @6 Type=CoordPair&lt;1024&gt; OverloadingParameters=[(@36 Name=x),(@36 Name=y)] @2)" />
-    <Alias n="39" Id="(Name=GameEventMgr::StartEvent @6 @15 OverloadingParameters=[@22,(@21 Name=overwrite),(@21 Name=resume)] @2)" />
+    <Alias n="17" Id="(Name=MapPersistentState::InitPools @6 @15 @2)" />
+    <Alias n="18" Id="(Name=MapPersistentStateManager::InitWorldMaps @6 @15 @2)" />
+    <Alias n="19" Id="(Name=World::SetInitialWorldSettings @6 @15 @2)" />
+    <Alias n="20" Uri="Assembly=mangosscript.dll" />
+    <Alias n="21" Id="(Name=GameEventMgr::Update @6 @13 OverloadingParameters=[(Type=&quot;const std::set&lt;unsigned short,std::less&lt;unsigned short&gt;,std::allocator&lt;unsigned short&gt; &gt; *&quot; Name=activeAtShutdown)] @2)" />
+    <Alias n="22" Id="(Name=GameEventMgr::GameEventSpawn @6 @15 OverloadingParameters=[(Type=short Name=event_id)] @2)" />
+    <Alias n="23" Id="Type=bool" />
+    <Alias n="24" Id="(Type=&quot;unsigned short&quot; Name=event_id)" />
+    <Alias n="25" Id="(Name=ObjectMgr::GetCreatureData @6 Type=&quot;const CreatureData *&quot; OverloadingParameters=[(@13 Name=guid)] @2)" />
+    <Alias n="26" Id="(Name=Map::CreateInstanceData @6 @15 OverloadingParameters=[(@23 Name=load)] @2)" />
+    <Alias n="27" Id="(Name=&quot;SpawnCreatureInMapsWorker::operator()&quot; @6 @15 OverloadingParameters=[(Type=&quot;Map *&quot; Name=map)] @2)" />
+    <Alias n="28" Id="(Name=&quot;SpawnCreatureInMapsWorker::operator()&quot; @6 @15 OverloadingParameters=[(Type=&quot;Map * {WorldMap}&quot; Name=map)] @2)" />
+    <Alias n="29" Id="(Name=Map::loaded @6 @23 OverloadingParameters=[(Type=&quot;const CoordPair&lt;64&gt; &amp;&quot; Name=p)] @2)" />
+    <Alias n="30" Id="(Name=ScriptMgr::CreateInstanceData @6 Type=&quot;InstanceData *&quot; OverloadingParameters=[(Type=&quot;Map * {WorldMap}&quot; Name=pMap)] @2)" />
+    <Alias n="31" Id="(Name=MapManager::DoForAllMapsWithMapId&lt;SpawnCreatureInMapsWorker&gt; @6 @15 OverloadingParameters=[(@13 Name=mapId),(Type=&quot;SpawnCreatureInMapsWorker &amp;&quot; Name=_do)] @2)" />
+    <Alias n="32" Id="(Name=main @6 @7 OverloadingParameters=[(@7 Name=argc),(Type=&quot;char * *&quot; Name=argv)] @2)" />
+    <Alias n="33" Id="(Name=GameEventMgr::CheckOneGameEvent @6 @23 OverloadingParameters=[(Type=&quot;unsigned short&quot; Name=entry),(Type=__int64 Name=currenttime)] @2)" />
+    <Alias n="34" Id="(Name=Creature::SpawnInMaps @6 @15 OverloadingParameters=[(@13 Name=db_guid),(Type=&quot;const CreatureData *&quot; Name=data)] @2)" />
+    <Alias n="35" Id="(Name=ObjectMgr::AddCreatureToGrid @6 @15 OverloadingParameters=[(@13 Name=guid),(Type=&quot;const CreatureData *&quot; Name=data)] @2)" />
+    <Alias n="36" Id="(Name=MapManager::CreateMap @6 Type=&quot;Map *&quot; OverloadingParameters=[(@13 Name=id),(Type=&quot;const WorldObject * {Transport}&quot; Name=obj)] @2)" />
+    <Alias n="37" Id="(Name=GameEventMgr::ApplyNewEvent @6 @15 OverloadingParameters=[@24,(@23 Name=resume)] @2)" />
+    <Alias n="38" Id="Type=float" />
+    <Alias n="39" Id="(Name=Map::IsLoaded @6 @23 OverloadingParameters=[(@38 Name=x),(@38 Name=y)] @2)" />
+    <Alias n="40" Id="(Name=MaNGOS::ComputeCellPair @6 Type=CoordPair&lt;1024&gt; OverloadingParameters=[(@38 Name=x),(@38 Name=y)] @2)" />
+    <Alias n="41" Id="(Name=GameEventMgr::StartEvent @6 @15 OverloadingParameters=[@24,(@23 Name=overwrite),(@23 Name=resume)] @2)" />
   </IdentifierAliases>
   <Styles>
     <Style TargetType="Link" GroupLabel="Current Call Stack Link" ValueLabel="True" Visibility="Hidden">

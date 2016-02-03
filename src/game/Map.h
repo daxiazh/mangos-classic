@@ -347,7 +347,7 @@ class MANGOS_DLL_SPEC Map : public GridRefManager<NGridType>
     private:
         time_t i_gridExpiry;
 
-        NGridType* i_grids[MAX_NUMBER_OF_GRIDS][MAX_NUMBER_OF_GRIDS];
+        NGridType* i_grids[MAX_NUMBER_OF_GRIDS][MAX_NUMBER_OF_GRIDS];		// #保存地图侃的Grid的指针,最多同时存在 MAX_NUMBER_OF_GRIDS x MAX_NUMBER_OF_GRIDS 个
 
         // Shared geodata object with map coord info...
         TerrainInfo* const m_TerrainData;

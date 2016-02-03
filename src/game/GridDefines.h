@@ -32,28 +32,34 @@ class Pet;
 class Player;
 class Camera;
 
-#define MAX_NUMBER_OF_GRIDS      64
 
-#define SIZE_OF_GRIDS            533.33333f
-#define CENTER_GRID_ID           (MAX_NUMBER_OF_GRIDS/2)
+/**************************************************************************/
+/* 每个Map 由最多 MAX_NUMBER_OF_GRIDS x MAX_NUMBER_OF_GRIDS 个 Grid 组成   */
+/* 每个Grid 由最多 MAX_NUMBER_OF_CELLS x MAX_NUMBER_OF_CELLS 个 Cell 组成  */
+/**************************************************************************/
 
-#define CENTER_GRID_OFFSET      (SIZE_OF_GRIDS/2)
+#define MAX_NUMBER_OF_GRIDS      64											// 一个 Map 中单个边的 Grid 的最大数量
+
+#define SIZE_OF_GRIDS            533.33333f									// 一个 Grid 的世界尺寸(码)
+#define CENTER_GRID_ID           (MAX_NUMBER_OF_GRIDS/2)					// 中间 Grid 的下标
+
+#define CENTER_GRID_OFFSET      (SIZE_OF_GRIDS/2)							// 中间 Grid 的世界坐标(码)
 
 #define MIN_GRID_DELAY          (MINUTE*IN_MILLISECONDS)
 #define MIN_MAP_UPDATE_DELAY    50
 
-#define MAX_NUMBER_OF_CELLS     16
-#define SIZE_OF_GRID_CELL       (SIZE_OF_GRIDS/MAX_NUMBER_OF_CELLS)
+#define MAX_NUMBER_OF_CELLS     16											// 一个 Grid 中单个边 Cell 的最大数量
+#define SIZE_OF_GRID_CELL       (SIZE_OF_GRIDS/MAX_NUMBER_OF_CELLS)			// 一个 Cell 的世界尺寸(码)
 
-#define CENTER_GRID_CELL_ID     (MAX_NUMBER_OF_CELLS*MAX_NUMBER_OF_GRIDS/2)
-#define CENTER_GRID_CELL_OFFSET (SIZE_OF_GRID_CELL/2)
+#define CENTER_GRID_CELL_ID     (MAX_NUMBER_OF_CELLS*MAX_NUMBER_OF_GRIDS/2)	// 中间 Cell 的下标
+#define CENTER_GRID_CELL_OFFSET (SIZE_OF_GRID_CELL/2)						// 中间 Cell 的世界坐标(码)
 
-#define TOTAL_NUMBER_OF_CELLS_PER_MAP    (MAX_NUMBER_OF_GRIDS*MAX_NUMBER_OF_CELLS)
+#define TOTAL_NUMBER_OF_CELLS_PER_MAP    (MAX_NUMBER_OF_GRIDS*MAX_NUMBER_OF_CELLS)	// 一个 Map 单个边的 Cell 的数量
 
 #define MAP_RESOLUTION 128
 
-#define MAP_SIZE                (SIZE_OF_GRIDS*MAX_NUMBER_OF_GRIDS)
-#define MAP_HALFSIZE            (MAP_SIZE/2)
+#define MAP_SIZE                (SIZE_OF_GRIDS*MAX_NUMBER_OF_GRIDS)			// 一个 Map 的世界大小(码)
+#define MAP_HALFSIZE            (MAP_SIZE/2)								// 半个 Map 的世界大小(码)
 
 // Creature used instead pet to simplify *::Visit templates (not required duplicate code for Creature->Pet case)
 // Cameras in world list just because linked with Player objects
@@ -136,6 +142,7 @@ typedef CoordPair<TOTAL_NUMBER_OF_CELLS_PER_MAP> CellPair;
 
 namespace MaNGOS
 {
+	// #Compute把给定的世界坐标变换成给定的二维数组的下标(Xn,Yn). 注: 坐标原点(0,0)对应二维数组的中间下标,如对于 64x64的二维数组-> (0, 0)对应 (32,32)
     template<class RET_TYPE, int CENTER_VAL>
     inline RET_TYPE Compute(float x, float y, float center_offset, float size)
     {
@@ -148,6 +155,7 @@ namespace MaNGOS
         return RET_TYPE(x_val, y_val);
     }
 
+	// #ComputeGridPair把给定的世界坐标(x,y)变换成对应的Grid二维数组的下标(Xn,Yn)
     inline GridPair ComputeGridPair(float x, float y)
     {
         return Compute<GridPair, CENTER_GRID_ID>(x, y, CENTER_GRID_OFFSET, SIZE_OF_GRIDS);

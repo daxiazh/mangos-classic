@@ -563,6 +563,11 @@ void GameEventMgr::LoadFromDB()
 
 uint32 GameEventMgr::Initialize()                           // return the next event delay in ms
 {
+	/*
+	 * 从 game_event_status 中读取当前正在执行的事件
+	 * 更新 event 的状态,找出哪些 event 需要执行,哪些需要停止,并返回一次调用 Update() 以检测事件的时间
+	 */
+	//
     m_ActiveEvents.clear();
 
     ActiveEvents activeAtShutdown;
