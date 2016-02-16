@@ -212,6 +212,7 @@ class MANGOS_DLL_SPEC Referencable
 #define DEFAULT_HEIGHT_SEARCH     10.0f                     // default search distance to find height at nearby locations
 #define DEFAULT_WATER_SEARCH      50.0f                     // default search distance to case detection water level
 
+// #地形信息,比如地形高度,是否有洞,是否有水等
 // class for sharing and managin GridMap objects
 class MANGOS_DLL_SPEC TerrainInfo : public Referencable<std::atomic_long>
 {
@@ -267,7 +268,7 @@ class MANGOS_DLL_SPEC TerrainInfo : public Referencable<std::atomic_long>
 
         const uint32 m_mapId;
 
-        GridMap* m_GridMaps[MAX_NUMBER_OF_GRIDS][MAX_NUMBER_OF_GRIDS];
+        GridMap* m_GridMaps[MAX_NUMBER_OF_GRIDS][MAX_NUMBER_OF_GRIDS];		// #Grid集合,保存所有的Grid信息,只有已经加载的Grid才会有真指针存在.
          int16 m_GridRef[MAX_NUMBER_OF_GRIDS][MAX_NUMBER_OF_GRIDS];
 
         // global garbage collection timer

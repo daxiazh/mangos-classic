@@ -188,6 +188,19 @@ struct ContainerMapList<TypeNull>                           /* nothing is in typ
 {
 };
 
+// 描述:	通过模板来把传入的多个对象类型自动展开,包含到一个类里面,以简化代码量. 这与C++11中的变参模板是一样的.这里是通过宏来实现的.
+// 如: typedef TypeMapContainer<AllWorldObjectTypes> WorldTypeMapContainer;
+// 实际包含了 AllWorldObjectTypes(它表示 TYPELIST_4(Player, Creature/*pets*/, Corpse/*resurrectable*/, Camera) )的容器
+// 这样可以一个类直接包含了 Player,Creature, Corpse, Camera 4个类型的指针列表(GridRefManager容器)
+// 相当于:
+// 	struct ContainerMapList{
+// 		GridRefManager<Player> _element1;
+// 		GridRefManager<Creature> _element2;
+// 		GridRefManager<Corpse> _element3;
+// 		GridRefManager<Camera> _element4;
+// 	};
+// 	只不过是编译器自动展开,且方便复用代码
+
 template<class H, class T>
 struct ContainerMapList<TypeList<H, T> >
 {
@@ -204,6 +217,7 @@ struct ContainerMapList<TypeList<H, T> >
  * of different types.
  */
 
+// 描述:	 对ContainerMapList进行操作的封装. 因为 ContainerMapList<> 可以包含多个类型(如同时存储 Player, Creature 等),操作起来太麻烦了,需要具体的类型才可以进行操作
 template<class OBJECT_TYPES>
 class TypeMapContainer
 {

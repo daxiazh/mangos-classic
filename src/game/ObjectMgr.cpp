@@ -7975,7 +7975,7 @@ void ObjectMgr::LoadActiveEntities(Map* _map)
     // Load active objects for _map
     std::set<uint32> const* mapList = sWorld.getConfigForceLoadMapIds();
     if (mapList && mapList->find(_map->GetId()) != mapList->end())
-    {
+    {	// 强制加载指定的地图所有带有怪物的 Grid
         for (CreatureDataMap::const_iterator itr = mCreatureDataMap.begin(); itr != mCreatureDataMap.end(); ++itr)
         {
             if (itr->second.mapid == _map->GetId())
@@ -7983,7 +7983,7 @@ void ObjectMgr::LoadActiveEntities(Map* _map)
         }
     }
     else                                                    // Normal case - Load all npcs that are active
-    {
+    {	// 只加载始终活动的怪物所在地图的所在 Grid
         std::pair<ActiveCreatureGuidsOnMap::const_iterator, ActiveCreatureGuidsOnMap::const_iterator> bounds = m_activeCreatures.equal_range(_map->GetId());
         for (ActiveCreatureGuidsOnMap::const_iterator itr = bounds.first; itr != bounds.second; ++itr)
         {

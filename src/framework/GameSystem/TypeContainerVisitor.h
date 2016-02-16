@@ -28,6 +28,8 @@
 #include "Platform/Define.h"
 #include "TypeContainer.h"
 
+// 这里的一陀模板函数是为了把 多类型容器 TypeMapContainer 展开调用.
+
 // forward declaration
 template<class T, class Y> class TypeContainerVisitor;
 
@@ -54,8 +56,8 @@ void VisitorHelper(VISITOR& v, ContainerMapList<T>& c)
 template<class VISITOR, class H, class T>
 void VisitorHelper(VISITOR& v, ContainerMapList<TypeList<H, T> >& c)
 {
-    VisitorHelper(v, c._elements);
-    VisitorHelper(v, c._TailElements);
+    VisitorHelper(v, c._elements);			// 遍历 H 类型对象的容器
+    VisitorHelper(v, c._TailElements);		// 遍历 T 类型对象的容器,这里是递归调用 VisitorHelper<class VISITOR, class H, class T>,除非 T 为 TypeNull
 }
 
 // for TypeMapContainer

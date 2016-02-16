@@ -80,6 +80,7 @@ typedef NGrid<MAX_NUMBER_OF_CELLS, Player, AllWorldObjectTypes, AllGridObjectTyp
 typedef TypeMapContainer<AllGridObjectTypes> GridTypeMapContainer;
 typedef TypeMapContainer<AllWorldObjectTypes> WorldTypeMapContainer;
 
+// 描述:	为坐标对(x,y)提供一些通用操作的封装,如 Cell 坐标, Grid 坐标. 注: 0 < x < LIMIT, 0< y < LIMIT
 template<const unsigned int LIMIT>
 struct CoordPair
 {
@@ -133,16 +134,16 @@ struct CoordPair
         return *this;
     }
 
-    uint32 x_coord;
-    uint32 y_coord;
+    uint32 x_coord;			// x 坐标
+    uint32 y_coord;			// y 坐标
 };
 
-typedef CoordPair<MAX_NUMBER_OF_GRIDS> GridPair;
-typedef CoordPair<TOTAL_NUMBER_OF_CELLS_PER_MAP> CellPair;
+typedef CoordPair<MAX_NUMBER_OF_GRIDS> GridPair;				// Grid 坐标对
+typedef CoordPair<TOTAL_NUMBER_OF_CELLS_PER_MAP> CellPair;		// 整个Map的Cell坐标对.不是指一个Grid内的Cell坐标,它可以通过 struct Cell 来转换到一个Grid内的Cell的坐标
 
 namespace MaNGOS
 {
-	// #Compute把给定的世界坐标变换成给定的二维数组的下标(Xn,Yn). 注: 坐标原点(0,0)对应二维数组的中间下标,如对于 64x64的二维数组-> (0, 0)对应 (32,32)
+	// #Compute把给定的世界坐标变换成给定的二维数组的下标(Xn,Yn). 注: 坐标原点(0,0)对应二维数组的中间下标,如对于 64x64的二维数组-> (0, 0)对应 (32,32).
     template<class RET_TYPE, int CENTER_VAL>
     inline RET_TYPE Compute(float x, float y, float center_offset, float size)
     {
@@ -155,12 +156,13 @@ namespace MaNGOS
         return RET_TYPE(x_val, y_val);
     }
 
-	// #ComputeGridPair把给定的世界坐标(x,y)变换成对应的Grid二维数组的下标(Xn,Yn)
+	// #ComputeGridPair把给定的世界坐标(x,y)变换成对应的Grid二维数组的下标GridPair
     inline GridPair ComputeGridPair(float x, float y)
     {
         return Compute<GridPair, CENTER_GRID_ID>(x, y, CENTER_GRID_OFFSET, SIZE_OF_GRIDS);
     }
 
+	// #ComputeCellPair把给定的世界坐标(x,y)变换成对应的Cell二维数组的下标CellPair
     inline CellPair ComputeCellPair(float x, float y)
     {
         return Compute<CellPair, CENTER_GRID_CELL_ID>(x, y, CENTER_GRID_CELL_OFFSET, SIZE_OF_GRID_CELL);

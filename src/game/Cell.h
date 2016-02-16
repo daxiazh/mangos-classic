@@ -44,6 +44,7 @@ struct CellArea
     CellPair high_bound;
 };
 
+// 描述:	代表了一个 Cell,它由 Cell 所在的 Grid 坐标及 cell 坐标组成
 struct Cell
 {
         Cell() { data.All = 0; }
