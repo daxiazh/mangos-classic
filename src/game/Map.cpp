@@ -869,6 +869,8 @@ void Map::UpdateObjectVisibility(WorldObject* obj, Cell cell, CellPair cellpair)
 
 void Map::SendInitSelf(Player* player)
 {
+	// 发送玩家的初始化数据(存档?)
+
     DETAIL_LOG("Creating player data for himself %u", player->GetGUIDLow());
 
     UpdateData data;

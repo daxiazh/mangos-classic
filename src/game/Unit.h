@@ -1855,6 +1855,8 @@ class MANGOS_DLL_SPEC Unit : public WorldObject
         void ScheduleAINotify(uint32 delay);
         bool IsAINotifyScheduled() const { return m_AINotifyScheduled;}
         void _SetAINotifyScheduled(bool on) { m_AINotifyScheduled = on;}       // only for call from RelocationNotifyEvent code
+
+		// 功能:	当位置移动时调用,以确定是否需要通知周围的对象(玩家,怪物等)刷新可见列表,或通知它进入对方的视野.
         void OnRelocated();
 
         bool IsLinkingEventTrigger() { return m_isCreatureLinkingTrigger; }

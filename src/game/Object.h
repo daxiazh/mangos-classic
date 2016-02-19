@@ -598,7 +598,10 @@ class MANGOS_DLL_SPEC WorldObject : public Object
 
         Creature* SummonCreature(uint32 id, float x, float y, float z, float ang, TempSummonType spwtype, uint32 despwtime, bool asActiveObject = false);
 
+		// 功能:	返回是否是始终活动的对象,如玩家,世界Boss等,这用来标识它所在的Grid永远也不会被卸载等逻辑
         bool isActiveObject() const { return m_isActiveObject || m_viewPoint.hasViewers(); }
+
+		// 功能:	设置对象为始终活动的对象,如玩家,世界Boss等,这用来标识它所在的Grid永远也不会被卸载等逻辑
         void SetActiveObjectState(bool active);
 
         ViewPoint& GetViewPoint() { return m_viewPoint; }
